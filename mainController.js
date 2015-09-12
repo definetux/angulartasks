@@ -19,7 +19,7 @@ function MainController() {
 		if (_isNumber(vm.input)) {
 			vm.output = vm.input * 10;
 		} else {
-			vm.output = vm.input === '' ? vm.input : 'Hello';
+			vm.output = vm.input === '' ? vm.input : 'Hello' + ' ' + vm.input;
 		}
 	}
 
