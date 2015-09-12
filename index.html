@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html ng-app='task1'>
+<head>
+	<title>Angular first app</title>
+	<script type="text/javascript" src='angular.min.js'></script>
+	<script type="text/javascript" src='app.js'></script>
+	<script type="text/javascript" src='mainController.js'></script>
+</head>
+<body>
+	<div ng-controller='MainController as mainCtrl'>
+		<input type='text' ng-model='mainCtrl.input' ng-change='mainCtrl.showText()' />
+		<p> {{mainCtrl.output}}</p>
+	</div>
+</body>
+</html>
